@@ -60,7 +60,7 @@ Performed data cleaning and preprocessing using Excel:
 Interactive Tableau dashboard created for customer behavior and segmentation analysis.
 
 ### Tableau Dashboard Link
-https://public.tableau.com/
+[https://public.tableau.com/](https://public.tableau.com/views/CustomerSegmentationDashboard_17794463784650/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
