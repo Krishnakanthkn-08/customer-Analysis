@@ -1,0 +1,27 @@
+use customer_analysis;
+select * from shopping_trends;
+select SUM(`Purchase Amount (USD)`) AS Total_amount
+from shopping_trends;
+select Gender,SUM(`Purchase Amount (USD)`) AS Total_amount
+from shopping_trends
+GROUP BY Gender
+ORDER BY Total_amount DESC;
+select Category,SUM(`Purchase Amount (USD)`) AS Total_amount
+from shopping_trends
+GROUP BY Category
+ORDER BY Total_amount DESC;
+select `Customer Segment`,COUNT(*) AS Total_customer,AVG(`Purchase Amount (USD)`) AS Avg_spending
+From shopping_trends
+GROUP BY `Customer Segment`
+ORDER BY Avg_spending DESC;
+select `Payment Method`,COUNT(*) AS Total_Transaction
+FROM shopping_trends
+GROUP BY `Payment Method`
+ORDER BY Total_Transaction DESC;
+SELECT`Subscription Status`,AVG(`Purchase Amount (USD)`) AS Total_spending
+From shopping_trends
+GROUP BY `Subscription Status`;
+Select Category , avg(`Review Rating`) as Avg_Rating
+From shopping_trends
+GROUP BY Category
+ORDER BY Avg_Rating DESC;
